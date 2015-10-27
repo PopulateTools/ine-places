@@ -1,0 +1,53 @@
+codigo provincia,codigo autonomia,nombre,slug,lon,lat
+2,8,Albacete,albacete,-1.8585424,38.994349
+3,10,Alicante/Alacant,alicante,-0.4906855,38.3459963
+4,1,Almería,almeria,-2.4637136,36.834047
+1,16,Araba/Álava,alava,-2.6983868,42.9099989
+33,3,Asturias,asturias,-5.8593267,43.3613953
+5,7,Ávila,avila,-4.6812086,40.656685
+6,11,Badajoz,badajoz,-6.9706535,38.8794495
+7,4,"Balears, Illes",baleares,2.8577105,39.5341789
+8,9,Barcelona,barcelona,2.0832941,41.297445
+48,16,Bizkaia,bizkaia,-2.6983868,43.2204286
+9,7,Burgos,burgos,-3.696906,42.3439925
+10,11,Cáceres,caceres,-6.3724247,39.4752765
+11,1,Cádiz,cadiz,-6.2885962,36.5270612
+39,6,Cantabria,cantabria,-3.9878427,43.1828396
+12,10,Castellón/Castelló,castellon,-0.0513246,39.9863563
+51,18,Ceuta,ceuta,-5.3213455,35.8893874
+13,8,Ciudad Real,ciudad-real,-3.927377799999999,38.9848295
+14,1,Córdoba,cordoba,-4.7793835,37.8881751
+15,12,"Coruña, A",coruna-a,-8.4115401,43.3623436
+16,8,Cuenca,cuenca,-2.1374162,40.0703925
+20,16,Gipuzkoa,gipuzkoa,-2.2236667,43.0756299
+17,9,Girona,girona,2.8214264,41.9794005
+18,1,Granada,granada,-3.5985571,37.1773363
+19,8,Guadalajara,guadalajara,-3.16017,40.632489
+21,1,Huelva,huelva,-6.9447224,37.261421
+22,2,Huesca,huesca,-0.4078058,42.131845
+23,1,Jaén,jaen,-3.784905699999999,37.7795941
+24,7,León,leon,-5.5670959,42.5987263
+27,12,Lugo,lugo,-7.5567582,43.0097384
+25,9,Lleida,lleida,0.6200146,41.6175899
+28,13,Madrid,madrid,-3.7037902,40.4167754
+29,1,Málaga,malaga,-4.4212655,36.721261
+52,19,Melilla,melilla,-2.9380973,35.2922775
+30,14,Murcia,murcia,-1.1306544,37.9922399
+31,15,Navarra,navarra,-1.6760691,42.6953909
+32,12,Ourense,ourense,-7.863880999999998,42.33578929999999
+34,7,Palencia,palencia,-4.5288016,42.0096857
+35,5,"Palmas, Las",las-palmas,-15.4362574,28.1235459
+36,12,Pontevedra,pontevedra,-8.6446202,42.4298846
+26,17,"Rioja, La",la-rioja,-2.4631181,36.9450225
+37,7,Salamanca,salamanca,-5.663539699999999,40.9701039
+38,5,Santa Cruz de Tenerife,tenerife,-16.2518467,28.4636296
+40,7,Segovia,segovia,-4.108806899999999,40.9429032
+41,1,Sevilla,sevilla,-5.89305,37.4201674
+42,7,Soria,soria,-2.4790306,41.7665972
+43,9,Tarragona,tarragona,1.2444909,41.1188827
+44,2,Teruel,teruel,-1.1064345,40.3456879
+45,8,Toledo,toledo,-4.027323099999999,39.8628316
+46,10,Valencia/València,valencia,-0.3762881,39.4699075
+47,7,Valladolid,valladolid,-4.724532099999999,41.652251
+49,7,Zamora,zamora,-5.7467879,41.5034712
+50,2,Zaragoza,zaragoza,-0.8890853,41.6488226
