@@ -1,6 +1,7 @@
 # INE Places gem
 
 [![Build Status](https://travis-ci.org/PopulateTools/ine-places.svg)](https://travis-ci.org/PopulateTools/ine-places)
+[![Gem Version](https://badge.fury.io/rb/ine-places.svg)](https://badge.fury.io/rb/ine-places)
 
 INE Places gem aims to help you to deal with Autonomous Regions, Provinces and Municipalities from
 Spain. This data is provided by the INE (Instituto Nacional Estadística) in this URL:
