@@ -17,7 +17,7 @@ reason it's important to know the date of the data.
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'ine-places'
+gem 'ine-places', require: 'ine/places/places'
 ```
 
 And then execute:
