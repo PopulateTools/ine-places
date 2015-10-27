@@ -29,7 +29,7 @@ Or install it yourself as:
 
 ## Usage
 
-This gem provices three models:
+This gem provides three models:
 
 - `INE::Places::AutonomousRegion`
 
@@ -49,8 +49,8 @@ The attributes of this model are:
 - id: INE code
 - name: the official name in the INE
 - slug: a sanitized name, valid for URLs
-- lon: longitude of the center point
-- lat: latitude of the center point
+- lon: longitude of the central point
+- lat: latitude of the central point
 
 To obtain all the autonomous regions:
 
@@ -90,8 +90,8 @@ The attributes of this model are:
 - slug: a sanitized name, valid for URLs
 - autonomous_region_id: the INE code of the autonomous region
 - autonomous_region: the AutonomousRegion object
-- lon: longitude of the center point
-- lat: latitude of the center point
+- lon: longitude of the central point
+- lat: latitude of the central point
 
 To obtain all the provinces:
 
@@ -131,8 +131,8 @@ The attributes of this model are:
 - slug: a sanitized name, valid for URLs
 - province_id: the INE code of the province
 - province: the Province object
-- lon: longitude of the center point
-- lat: latitude of the center point
+- lon: longitude of the central point
+- lat: latitude of the central point
 
 To obtain all the places:
 
@@ -163,7 +163,7 @@ INE::Places::Place.find_by_slug('burjassot')
 
 ## Development
 
-After checking out the repo, run `bin/setup` to install dependencies. Then, run `rake spec` to run the tests. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
+After checking out the repository, run `bin/setup` to install dependencies. Then, run `rake spec` to run the tests. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
 
 To install this gem onto your local machine, run `bundle exec rake install`. To release a new version, update the version number in `version.rb`, and then run `bundle exec rake release`, which will create a git tag for the version, push git commits and tags, and push the `.gem` file to [rubygems.org](https://rubygems.org).
 
