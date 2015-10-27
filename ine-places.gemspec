@@ -9,9 +9,9 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Fernando Blat"]
   spec.email         = ["ferblape@gmail.com"]
 
-  spec.summary       = %q{TODO: Write a short summary, because Rubygems requires one.}
-  spec.description   = %q{TODO: Write a longer description or delete this line.}
-  spec.homepage      = "TODO: Put your gem's website or public repo URL here."
+  spec.summary       = %q{An easy way to work with Spanish regions in Ruby}
+  spec.description   = %q{Work with Spanish regions using INE codes and data}
+  spec.homepage      = "https://github.com/PopulateTools/ine-places"
   spec.license       = "MIT"
 
   # Prevent pushing this gem to RubyGems.org by setting 'allowed_push_host', or
