@@ -4,12 +4,14 @@
 [![Gem Version](https://badge.fury.io/rb/ine-places.svg)](https://badge.fury.io/rb/ine-places)
 
 INE Places gem aims to help you to deal with Autonomous Regions, Provinces and Municipalities from
-Spain. This data is provided by the INE (Instituto Nacional Estadística) in this URL:
+Spain. This data is provided by the INE (Instituto Nacional Estadística) in these URLs:
 
 http://www.ine.es/daco/daco42/codmun/codmun11/11codmunmapa.htm
+http://www.ine.es/jaxi/menu.do?type=pcaxis&path=/t20/e245/codmun&file=inebase&L=0
 
-According to that webpage the data **was updated on 01-01-2011**. As you might know municipalities
-data changes along the years: sometimes two municipalities are merged in a single one. For this
+According to that webpage the data **was updated the 3rd of February, 2015**. As you might know municipalities
+data changes along the years: sometimes two municipalities are merged in a single one [more
+information in Spanish](http://www.ine.es/daco/daco42/codmun/codmunmod.htm). For this
 reason it's important to know the date of the data.
 
 ## Installation
@@ -171,6 +173,14 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 ## Contributing
 
 Bug reports and pull requests are welcome on GitHub at https://github.com/PopulateTools/ine-places. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) [code of conduct](CODE_OF_CONDUCT.md).
+
+## Data License
+
+The data included in this gem has been extracted from the [INE](http://ine.es) and has been
+processed and manipulated to fit in a CSV format. The sources of the data are included in the first
+paragraph of this file.
+
+Please read the conditions about using the data provided by this gem in the [INE documentation](http://www.ine.es/ss/Satellite?L=0&c=Page&cid=1254735849170&p=1254735849170&pagename=Ayuda%2FINELayout#).
 
 ## License
 
