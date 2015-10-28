@@ -2,7 +2,7 @@ class INE::Places::Place < OpenStruct
   include INE::Places::CSVRecord
 
   def self.find_all_by_province_id(province_id)
-    return [] if province_id.blank?
+    raise ArgumentError if province_id.blank?
 
     collection_klass.records.select{ |place| place.province_id == province_id }
   end
