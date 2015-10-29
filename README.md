@@ -12,7 +12,8 @@ Spain. This data is provided by the INE (Instituto Nacional Estadística) in the
 According to that webpage the data **was updated the 3rd of February, 2015**. As you might know municipalities
 data changes along the years: sometimes two municipalities are merged in a single one [more
 information in Spanish](http://www.ine.es/daco/daco42/codmun/codmunmod.htm). For this
-reason it's important to know the date of the data.
+reason it's important to know the date of the data. The data included in this gem has been processed
+based on the data published on the INE (so, it was processed after the 3rd of Feb, 2015).
 
 ## Installation
 
@@ -32,7 +33,7 @@ Or install it yourself as:
 
 ## Usage
 
-This gem provides three models:
+This gem provides three Ruby classes:
 
 - `INE::Places::AutonomousRegion`
 
@@ -51,7 +52,7 @@ The attributes of this model are:
 
 - id: INE code
 - name: the official name in the INE
-- slug: a sanitized name, valid for URLs
+- slug: a sanitized unique name, valid for URLs
 - lon: longitude of the central point
 - lat: latitude of the central point
 
@@ -90,7 +91,7 @@ The attributes of this model are:
 
 - id: INE code
 - name: the official name in the INE
-- slug: a sanitized name, valid for URLs
+- slug: a sanitized unique name, valid for URLs
 - autonomous_region_id: the INE code of the autonomous region
 - autonomous_region: the AutonomousRegion object
 - lon: longitude of the central point
@@ -131,7 +132,7 @@ The attributes of this model are:
 
 - id: INE code
 - name: the official name in the INE
-- slug: a sanitized name, valid for URLs
+- slug: a sanitized unique name, valid for URLs
 - province_id: the INE code of the province
 - province: the Province object
 - lon: longitude of the central point
