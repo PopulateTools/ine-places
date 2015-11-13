@@ -41,6 +41,15 @@ RSpec.shared_examples "CSVRecord object" do
     expect(record.id).to eql(id)
   end
 
+  it 'can be loaded by an Integer id' do
+    id = described_class.all.first.id
+    integer_id = id.to_i
+    record = described_class.find(integer_id)
+
+    expect(record).to be_kind_of(described_class)
+    expect(record.id).to eql(id)
+  end
+
   it 'raises Argument error when #find_by_id argument is missing' do
     expect { described_class.find() }.to raise_error(ArgumentError)
   end

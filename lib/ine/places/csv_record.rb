@@ -26,7 +26,7 @@ module INE::Places::CSVRecord
     def find(id)
       raise ArgumentError if id.blank?
 
-      collection_klass.records.detect{|obj| obj.id == id }
+      collection_klass.records.detect{|obj| obj.id.to_i == id.to_i }
     end
   end
 end
