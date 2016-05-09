@@ -20,7 +20,7 @@ based on the data published on the INE (so, it was processed after the 3rd of Fe
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'ine-places', require: 'ine/places/places'
+gem 'ine-places'
 ```
 
 And then execute:
