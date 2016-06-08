@@ -165,6 +165,40 @@ INE::Places::Place.find_by_slug('burjassot')
 => #<INE::Places::Place id="46078", name="Burjassot", slug="burjassot", province_id="46", lon="-0.4135963", lat="39.5096699", province=#<INE::Places::Province id="46", name="Valencia/València", slug="valencia", autonomous_region_id="10", lon="-0.3762881", lat="39.4699075", autonomous_region=#<INE::Places::AutonomousRegion id="10", name="Comunidad Valenciana", slug="comunidad-valenciana", lon="-0.7532808999999999", lat="39.4840108">>>
 ```
 
+## Hydratating models with data (experimental feature)
+
+It's quite common to work with data related with the entities provided by this gem. For example, to know the debt of a place, the amount of schools, the number of inhabitants, and so on. This data lives in external sources, such a CSV or a JSON file, or an API endpoint but can be co-related with the entities using an ID column.
+
+Hydratation feature helps you with this issue. For the moment it's very experimental but allows you to add basics sets of data from a local CSV file.
+
+For example, given a CSV file with a single row:
+
+```csv
+municipio,value
+28079,33
+```
+
+You could hydratate the model `INE::Places::Place` using the `.hydrate` function:
+
+```ruby
+INE::Places.hydratate INE::Places::Place, 'spec/fixtures/happiness.csv', id_column: 'municipio',
+                                                                         as: :happiness,
+                                                                         value_column: 'value'
+```
+
+You just need to provide:
+
+- id column, to match the IDs
+- the `as` column, with the name of the new method
+- the value column, to know exactly where the value is
+
+After hydratating a class, every object of the class has the new method in the `.data` property:
+
+```ruby
+place.data.happiness
+#> 100
+```
+
 ## Development
 
 After checking out the repository, run `bin/setup` to install dependencies. Then, run `rake spec` to run the tests. You can also run `bin/console` for an interactive prompt that will allow you to experiment.

@@ -7,6 +7,10 @@ class INE::Places::Place < OpenStruct
     collection_klass.records.select{ |place| place.province_id == province_id }
   end
 
+  def data
+    @data ||= OpenStruct.new
+  end
+
   private
 
   def self.collection_klass
