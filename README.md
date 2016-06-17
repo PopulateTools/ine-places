@@ -183,7 +183,8 @@ You could hydratate the model `INE::Places::Place` using the `.hydrate` function
 ```ruby
 INE::Places.hydratate INE::Places::Place, 'spec/fixtures/happiness.csv', id_column: 'municipio',
                                                                          as: :happiness,
-                                                                         value_column: 'value'
+                                                                         value_column: 'value',
+                                                                         convert_to: :float
 ```
 
 You just need to provide:

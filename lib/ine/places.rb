@@ -2,7 +2,7 @@ require "ine/places/version"
 require "csv"
 require "ostruct"
 require "active_support/all"
-require "byebug"
+require "open-uri"
 
 module INE
   module Places
@@ -26,19 +26,23 @@ module INE
     end
 
     def self.hydratate(klass, data_path, options)
-      unless File.file?(data_path)
-        raise "Missing data file: #{data_path}"
-      end
+      data = CSV.read(open(data_path), headers: true)
 
-      data = CSV.read(data_path, headers: true)
-      klass.all.map do |obj|
-        obj.tap do
-          value = if r = data.detect{|row| row[options[:id_column]] == obj.id }
-                    r[options[:value_column]]
-                  end
+      data.each do |row|
+        if obj = klass.find(row[options[:id_column]])
+          value = row[options[:value_column]]
+          case options[:convert_to]
+          when :float
+            value = value.to_f
+          when :integer, :int
+            value = value.to_i
+          end
+
           obj.data.send((options[:as].to_s + '=').to_sym, value)
         end
       end
+
+      nil
     end
   end
 end
