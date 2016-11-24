@@ -7,6 +7,12 @@ class INE::Places::Place < OpenStruct
     collection_klass.records.select{ |place| place.province_id == province_id }
   end
 
+  def self.find_by_name_and_province_id(place_name, province_id)
+    raise ArgumentError if place_name.blank? || province_id.blank?
+
+    collection_klass.records.select{ |place| place.name == place_name && place.province_id == province_id.to_s }.first
+  end
+
   def data
     @data ||= OpenStruct.new
   end
