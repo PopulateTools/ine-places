@@ -3,6 +3,7 @@ require "csv"
 require "ostruct"
 require "active_support/all"
 require "open-uri"
+require "ruby_px"
 
 module INE
   module Places

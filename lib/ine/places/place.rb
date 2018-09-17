@@ -17,6 +17,16 @@ class INE::Places::Place < OpenStruct
     @data ||= OpenStruct.new
   end
 
+  def population(year)
+    dataset_file_path = File.expand_path("../data/padron_#{year}.px", __FILE__)
+    unless File.file?(dataset_file_path)
+      return nil
+    end
+    dataset = RubyPx::Dataset.new(dataset_file_path)
+    dataset.data('edad (año a año)' => 'Total', 'sexo' => 'Ambos sexos')
+    debugger
+  end
+
   private
 
   def self.collection_klass
