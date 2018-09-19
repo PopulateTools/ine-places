@@ -3,6 +3,11 @@ require 'spec_helper'
 describe INE::Places::AutonomousRegion do
   it_should_behave_like "CSVRecord object"
 
+  it 'implements name in Catalan' do
+    ar = INE::Places::AutonomousRegion.find('1')
+    expect(ar.name(:ca)).not_to be_nil
+  end
+
   it 'returns a list of the provinces on it' do
     ar = INE::Places::AutonomousRegion.find('1')
 

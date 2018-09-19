@@ -5,6 +5,14 @@ class INE::Places::AutonomousRegion < OpenStruct
     INE::Places::Province.find_all_by_autonomous_region_id(self.id)
   end
 
+  def name(locale = nil)
+    if locale ==  :ca
+      self['name_ca']
+    else
+      self['name']
+    end
+  end
+
   private
 
   def self.collection_klass
