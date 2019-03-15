@@ -7,7 +7,7 @@ Gem::Specification.new do |spec|
   spec.name          = "ine-places"
   spec.version       = INE::Places::VERSION
   spec.authors       = ["Fernando Blat"]
-  spec.email         = ["ferblape@gmail.com"]
+  spec.email         = ["fernando@blat.es"]
 
   spec.summary       = %q{An easy way to work with Spanish regions in Ruby}
   spec.description   = %q{Work with Spanish regions using INE codes and data}
@@ -29,7 +29,7 @@ Gem::Specification.new do |spec|
 
   spec.add_runtime_dependency "activesupport", ">= 4.2"
 
-  spec.add_development_dependency "bundler", "~> 1.12"
+  spec.add_development_dependency "bundler", "~> 1.17"
   spec.add_development_dependency "rake", "~> 12.3"
   spec.add_development_dependency "rspec", "~> 3.4"
   spec.add_development_dependency "byebug", '~> 10.0', '>= 9.0.5'
