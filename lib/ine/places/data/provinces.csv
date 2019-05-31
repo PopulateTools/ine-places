@@ -1,4 +1,4 @@
-codigo provincia,codigo autonomia,nombre,slug,lon,lat
+province_id,autonomous_region_id,province_name,slug,lon,lat
 2,8,Albacete,albacete,-1.8585424,38.994349
 3,10,Alicante/Alacant,alicante,-0.4906855,38.3459963
 4,1,Almería,almeria,-2.4637136,36.834047

@@ -1,4 +1,4 @@
-codigo autonomia,nombre,slug,lon,lat,nombre_ca
+autonomous_region_id,autonomous_region_name,slug,lat,lon,autonomous_region_name_ca
 1,Andalucía,andalucia,-4.7277528,37.5442706,Andalucia
 2,Aragón,aragon,-0.9056623,41.5976275,Aragó
 3,Principado de Asturias,asturias,-5.8593267,43.3613953,Principat D'Astúries
