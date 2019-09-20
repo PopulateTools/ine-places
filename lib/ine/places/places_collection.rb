@@ -2,7 +2,7 @@ class INE::Places::PlacesCollection
   include Singleton
 
   def self.records
-    @records ||= CSV.read("#{INE::Places::ROOT}/data/places.csv", headers: true).map do |raw_data|
+    @records ||= CSV.read("#{INE::Places::ROOT}/data/places.csv", headers: true, encoding: 'utf-8').map do |raw_data|
                    build_from_raw_data(raw_data)
                  end.sort_by(&:slug)
   end
