@@ -2,7 +2,7 @@ require 'spec_helper'
 
 describe INE::Places do
   it 'has a version number' do
-    expect(INE::Places::VERSION).not_to be nil
+    expect(INE::Places::Version).not_to be nil
   end
 
   it 'preloads the data' do

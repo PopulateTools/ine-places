@@ -1,5 +1,5 @@
 module INE
   module Places
-    VERSION = "0.6.0"
+    Version = "0.6.1"
   end
 end

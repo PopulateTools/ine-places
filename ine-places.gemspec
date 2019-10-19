@@ -5,7 +5,7 @@ require 'ine/places/version'
 
 Gem::Specification.new do |spec|
   spec.name          = "ine-places"
-  spec.version       = INE::Places::VERSION
+  spec.version       = INE::Places::Version
   spec.authors       = ["Fernando Blat"]
   spec.email         = ["fernando@blat.es"]
 
